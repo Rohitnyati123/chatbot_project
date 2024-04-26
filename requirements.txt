@@ -4,4 +4,5 @@ nltk
 tensorflow
 bs4
 flask
+pickle
 -e .
