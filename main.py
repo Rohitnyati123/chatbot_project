@@ -3,7 +3,7 @@ from src.pipeline.prediction import generate_response
 from src.pipeline.prediction import train_model
 import pickle
 
-
+"""this is the user window"""
 app=Flask(__name__)
 @app.route('/')
 def demo():
@@ -11,7 +11,7 @@ def demo():
     return render_template('index.html')
 
 
-
+"""this is the result window"""
 @app.route('/success',methods=['POST'])
 def printdata():
     with open('model2.pkl', 'rb') as f:

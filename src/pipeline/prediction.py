@@ -14,6 +14,7 @@ from tensorflow.keras.models import Sequential
 import pickle
 
 
+"""this function is used for clean the data and  train the model on given document"""
 def train_model():
     paragraphs=[]
     url = "https://en.wikipedia.org/wiki/Chatbot"
@@ -65,12 +66,14 @@ def train_model():
     
     return model
 
+
+"""this is used for creating pickle file of model"""
 def create_pickle(model):
     with open('model2.pkl','wb') as f:
         pickle.dump(model,f)
 
 
-
+"""its used for generate the response or output of the model"""
 def generate_response(input_text,model):
     tokenizer=Tokenizer()
     input_seq = tokenizer.texts_to_sequences([input_text])
