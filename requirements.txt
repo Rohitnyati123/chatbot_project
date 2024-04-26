@@ -1,0 +1,7 @@
+numpy
+pandas
+nltk
+tensorflow
+bs4
+flask
+-e .
